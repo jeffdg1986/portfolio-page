@@ -1,9 +1,13 @@
+/* Navigation Bar */
 .navBar{
   background-color: black;
   width: 100%;
   position: fixed;
   height: 70px;
   top:0;
+  z-index: 1;
+  border-bottom: 4px ridge red;
+  outline: 4px ridge saddlebrown;
 }
 .homeLink, .bioLink{
   padding: 0px 15px 0px 15px;
@@ -36,27 +40,175 @@
 .projectLink4{
   border-right: 15px solid black;
 }
-.welcome, .technologies, .about, .projects{
+
+/* Main page contents */
+main{
   position: relative;
-  font-size: 32px;
-  z-index: 1;
-  top: 100px;
+  top: 50px;
 }
-.welcome h2{
+
+/* Home Section: contains Introduction and Technologies */
+#home{
+  background-image:url('./images/pikes_peak.JPG'); 
+  background-size: 100% 100%;
+  position: relative;
+  height: auto;
+}
+
+.introduction, .technologies, .projects{
+  font-size: 32px;
+}
+.introduction h2{
   text-align: center;
   font-size: 64px; 
   margin-top: 20px;
+  padding-top: 20px;
 }
-.bioSection{
-  background-image:url('./images/pikes_peak.JPG');
-  height: 3020px;
-}
-.welcome p{
+
+.introduction p{
   width: 50%;
   height: auto;
   margin-left: 50px;
+  font-size: smaller;
 }
 .technologies{
+  position: relative;
   text-align: center;
-  margin-top: 90px;
+  width: 600px;
+  height: auto;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.technologies img{
+  height: 125px;
+  width: 125px;
+  margin: 40px 22px 5px 22px;
+}
+.technologies .name{
+  font-size: 24px;
+  height: 125px;
+  width: auto;
+  display: inline;
+  overflow: visible;
+  font-weight: bold;
+  color: white;
+}
+.technologies .react{
+  position: relative;
+  right: 78px
+}
+
+.technologies .javascript{
+  position: relative;
+  right: 19px;
+}
+
+.technologies .d3JS{
+  position: relative;
+  left: 60px;
+}
+
+/* About Me Section */
+#aboutMe{
+  position: relative;
+  border: 2px solid black;
+  background-color:darkslategrey;
+  color: white;
+  padding-top: 60px;
+}
+.about{
+  font-size: 20px;
+  width: 750px;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.comparison{
+  height: 600px;
+  width: 100%;
+
+}
+.nerd{
+  width: 350px;
+  height:300px;
+  float: right;
+  margin-right: 10px;
+}
+.beaker{
+  width: 350px;
+  height: 300px;
+  float: left;
+  margin-left: 10px;
+}
+
+/* Resume Section */
+#resume{
+  position: relative;
+  border: 2px solid black;
+  background-color:honeydew;
+}
+.description{
+  width: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.experienceType{
+  margin-left: 150px;
+  text-decoration: underline;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 24px;
+  padding-top: 80px;
+}
+.institution{
+  font-weight: bold;
+  font-size: 28px;
+}
+/* Project Section */
+#projects{
+  position: relative;
+  border: 2px solid black;
+}
+.scroll2AboutMe a, .scroll2Resume a, .scroll2Projects a{
+  position: relative;
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  display: inline-block;
+  border: 10px solid red;
+  margin-left: 47%;
+  /* look into making this somewhat transparent */
+}
+.scroll2AboutMe a:hover, .scroll2Resume a:hover, .scroll2Projects a:hover{
+  color: red;
+  background-color: white;
+  border-color: white;
+}
+.scroll2Resume a{
+  bottom: 30px;
+}
+.scroll2AboutMe a{
+  bottom: 15px;
+}
+.scroll2Projects a{
+  margin-top: 20px;
+  bottom: 15px;
+}
+.italicBold{
+  font-style: italic;
+  font-weight: bold;
+}
+.priceyPaper, .jobTitle{
+  font-style: italic;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 5px;
+}
+.projects{
+  width: 90%;
+  margin: auto;
+  height: 1000px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
