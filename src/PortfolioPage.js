@@ -1,4 +1,4 @@
-import './App.css';
+import './PortfolioPage.css';
 import percussionPic from './images/percussion_Pic.png';
 import nerd from './images/computer_nerd.jpeg';
 import beaker from './images/beaker_in_lab_3.jpg';
