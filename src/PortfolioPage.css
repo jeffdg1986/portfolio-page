@@ -165,8 +165,10 @@ main{
   font-weight: bold;
   font-size: 28px;
 }
+
 /* Project Section */
 #projects{
+  background-color:antiquewhite;
   position: relative;
   border: 2px solid black;
 }
@@ -205,10 +207,11 @@ main{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding-bottom: 5px;
 }
-.projects{
+.projectContainer{
   width: 90%;
   margin: auto;
-  height: 1000px;
+  height: auto;
   margin-top: 50px;
   margin-bottom: 50px;
+
 }
