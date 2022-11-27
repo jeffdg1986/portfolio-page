@@ -1,4 +1,5 @@
 import './App.css';
+import percussionPic from './images/percussion_Pic.png';
 import nerd from './images/computer_nerd.jpeg';
 import beaker from './images/beaker_in_lab_3.jpg';
 import reactPic from './images/favicon.ico'; 
@@ -19,7 +20,7 @@ class PortfolioPage extends Component {
       <a className='homeLink' href='#home'>Home</a>
       <a className='bioLink' href='#aboutMe'>About Me</a>
       <a className='projectLink4' href='https://www.google.com'>Survey Form</a>
-      <a className='projectLink3' href='https://www.google.com'>Percussion Machine</a>
+      <a className='projectLink3' href='https://jeffdg1986.github.io/percussion-machine/'>Percussion Machine</a>
       <a className='projectLink2' href='https://jeffdg1986.github.io/timer-app/index.html'>Pomodoro Clock</a>
       <a className='projectLink1' href='https://jeffdg1986.github.io/detailed_calculator/'>Calculator App</a>
       </div>
@@ -127,7 +128,7 @@ class PortfolioPage extends Component {
       <div className='projects'> 
       <a href='https://jeffdg1986.github.io/detailed_calculator/' alt='https://github.com/jeffdg1986/detailed_calculator'><img src={calculatorPic} alt='calculator' className='calculator'/></a>
       <a href='https://jeffdg1986.github.io/timer-app/index.html' alt='https://github.com/jeffdg1986/timer-app'><img src={timerPic} alt='timer' className='timer'/></a>
-      
+      <a href='https://jeffdg1986.github.io/percussion-machine/' alt='https://github.com/jeffdg1986/percussion-machine'><img src={percussionPic} alt='percussion' className='percussion'/></a>
       </div>
       </section>
       </main>
