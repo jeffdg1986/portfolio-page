@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio-page/index.html/static/css/main.1693959d.css",
-    "main.js": "/portfolio-page/index.html/static/js/main.a9c60420.js",
-    "static/js/787.28a6522c.chunk.js": "/portfolio-page/index.html/static/js/787.28a6522c.chunk.js",
-    "static/media/pikes_peak.JPG": "/portfolio-page/index.html/static/media/pikes_peak.b71ad996486d73bf1f9f.JPG",
-    "static/media/beaker_in_lab_3.jpg": "/portfolio-page/index.html/static/media/beaker_in_lab_3.8ff311d2e81f54af037e.jpg",
-    "static/media/computer_nerd.jpeg": "/portfolio-page/index.html/static/media/computer_nerd.135213dc08f56806c8c2.jpeg",
-    "static/media/survey_Pic.png": "/portfolio-page/index.html/static/media/survey_Pic.3c8044dacc13e85289bc.png",
-    "static/media/Pomodoro_Pic.png": "/portfolio-page/index.html/static/media/Pomodoro_Pic.3188319e3081f335054b.png",
-    "static/media/percussion_Pic.png": "/portfolio-page/index.html/static/media/percussion_Pic.7f5b95ededaed79f80bb.png",
-    "static/media/Calculator_3.png": "/portfolio-page/index.html/static/media/Calculator_3.9221866314901e6a8259.png",
-    "static/media/favicon.ico": "/portfolio-page/index.html/static/media/favicon.4fe75d5f9adb18067b85.ico",
-    "index.html": "/portfolio-page/index.html/index.html",
-    "main.1693959d.css.map": "/portfolio-page/index.html/static/css/main.1693959d.css.map",
-    "main.a9c60420.js.map": "/portfolio-page/index.html/static/js/main.a9c60420.js.map",
-    "787.28a6522c.chunk.js.map": "/portfolio-page/index.html/static/js/787.28a6522c.chunk.js.map"
+    "main.css": "/portfolio-page/static/css/main.5f35ef69.css",
+    "main.js": "/portfolio-page/static/js/main.30acdae5.js",
+    "static/js/787.28a6522c.chunk.js": "/portfolio-page/static/js/787.28a6522c.chunk.js",
+    "static/media/pikes_peak.JPG": "/portfolio-page/static/media/pikes_peak.b71ad996486d73bf1f9f.JPG",
+    "static/media/beaker_in_lab_3.jpg": "/portfolio-page/static/media/beaker_in_lab_3.8ff311d2e81f54af037e.jpg",
+    "static/media/computer_nerd.jpeg": "/portfolio-page/static/media/computer_nerd.135213dc08f56806c8c2.jpeg",
+    "static/media/survey_Pic.png": "/portfolio-page/static/media/survey_Pic.3c8044dacc13e85289bc.png",
+    "static/media/Pomodoro_Pic.png": "/portfolio-page/static/media/Pomodoro_Pic.3188319e3081f335054b.png",
+    "static/media/percussion_Pic.png": "/portfolio-page/static/media/percussion_Pic.7f5b95ededaed79f80bb.png",
+    "static/media/Calculator_3.png": "/portfolio-page/static/media/Calculator_3.9221866314901e6a8259.png",
+    "static/media/favicon.ico": "/portfolio-page/static/media/favicon.4fe75d5f9adb18067b85.ico",
+    "index.html": "/portfolio-page/index.html",
+    "main.5f35ef69.css.map": "/portfolio-page/static/css/main.5f35ef69.css.map",
+    "main.30acdae5.js.map": "/portfolio-page/static/js/main.30acdae5.js.map",
+    "787.28a6522c.chunk.js.map": "/portfolio-page/static/js/787.28a6522c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1693959d.css",
-    "static/js/main.a9c60420.js"
+    "static/css/main.5f35ef69.css",
+    "static/js/main.30acdae5.js"
   ]
 }
