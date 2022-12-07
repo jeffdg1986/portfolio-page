@@ -1,22 +1,26 @@
-/* Navigation Bar */
+/* at each cross over point, the computer is search back through the css for what to do */
+/* if there is anything telling it what to do outside of the media query ranges, it'll do its */
+/* outside of media query behavior */
+/* media queries should go at the bottom of the page from low to high order */
+
 .navBar{
+  display: block;
   background-color: black;
   width: 100%;
   position: fixed;
   height: 70px;
-  top:0;
+  top: 0;
   z-index: 1;
   border-bottom: 4px ridge red;
   outline: 4px ridge saddlebrown;
 }
-.homeLink, .bioLink{
+.homeLink, .bioLink, .projectsLink{
   padding: 0px 15px 0px 15px;
-  color: white;
+  color: green; 
   text-decoration: none;
   float: left;
-
 }
-.homeLink:hover, .bioLink:hover{
+.homeLink:hover, .bioLink:hover, .projectsLink:hover{
   color: black;
   background-color: white;  
 }
@@ -34,169 +38,175 @@
 .linkContainer a{
   position: relative;
   top: 20px; 
-  font-size: 24px;
-  display: block;
-}
-.projectLink4{
-  border-right: 15px solid black;
+  font-size: 20px;
 }
 
 /* Main page contents */
 main{
   position: relative;
   top: 50px;
+  margin: 0;
 }
 
 /* Home Section: contains Introduction and Technologies */
 #home{
   background-image:url('./images/pikes_peak.JPG'); 
-  background-size: 100% 100%;
+  background-size: 100% 105%;
   position: relative;
   height: auto;
+  width: 100%;
 }
 
 .introduction, .technologies, .projects{
-  font-size: 32px;
+  font-size: 26px;
 }
 .introduction h2{
   text-align: center;
-  font-size: 64px; 
+  font-size: 3rem; 
   margin-top: 20px;
   padding-top: 20px;
 }
 
 .introduction p{
-  width: 50%;
+  width: 100%;
   height: auto;
-  margin-left: 50px;
+  text-align: center;
   font-size: smaller;
 }
+/* need to make image and name each be with an inline block so then when width is set to 100%, they move together */
 .technologies{
   position: relative;
   text-align: center;
-  width: 600px;
+  width: 100%;
   height: auto;
   margin: auto;
   margin-top: 80px;
   margin-bottom: 50px;
+  flex-direction: row;
 }
+
+/* adjust this for each screen size */
 .technologies img{
-  height: 125px;
-  width: 125px;
-  margin: 40px 22px 5px 22px;
+  position: relative;
+  height: 15%;
+  width: 15%;
+  margin: 3%;
 }
 .technologies .name{
+  position: relative;
   font-size: 24px;
-  height: 125px;
-  width: auto;
-  display: inline;
-  overflow: visible;
+  height: auto;
+  width: 100%;
+  display: block;
   font-weight: bold;
   color: white;
 }
-.technologies .react{
-  position: relative;
-  right: 78px
-}
 
-.technologies .javascript{
-  position: relative;
-  right: 19px;
-}
-
-.technologies .d3JS{
-  position: relative;
-  left: 60px;
-}
 
 /* About Me Section */
 #aboutMe{
   position: relative;
-  border: 2px solid black;
   background-color:darkslategrey;
   color: white;
   padding-top: 60px;
+  width: 100%;
+}
+#aboutMe h1{
+  padding-left: 1%;
 }
 .about{
   font-size: 20px;
-  width: 750px;
+  width: 90%;
   height: auto;
-  float: left;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 .comparison{
-  height: 600px;
-  width: 100%;
+  height: auto;
+  width: 90%;
+  margin: 5%;
 
 }
 .nerd{
-  width: 350px;
-  height:300px;
-  float: right;
-  margin-right: 10px;
+  position: relative;
+  width: 100%;
+  height:auto;
 }
 .beaker{
-  width: 350px;
-  height: 300px;
-  float: left;
-  margin-left: 10px;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 /* Resume Section */
 #resume{
   position: relative;
-  border: 2px solid black;
   background-color:honeydew;
+  height: auto;
+  width: 100%;
 }
 .description{
-  width: 50%;
+  width: 90%;
   margin: auto;
   margin-bottom: 10px;
 }
 .experienceType{
-  margin-left: 150px;
+  width: 10%;
+  padding: 5% 0 5% 1%;
   text-decoration: underline;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 24px;
-  padding-top: 80px;
 }
 .institution{
   font-weight: bold;
-  font-size: 28px;
+  font-size: 18px;
+}
+#resume .first{
+  padding-top: 100px;
 }
 
 /* Project Section */
 #projects{
-  background-color:antiquewhite;
+  width: 100%;
+  height: auto;
+  background-color: darkblue;
   position: relative;
-  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
+.calculator, .timer, .percussion, .survey{
+  align-self: center;
+  width: 80%;
+  height: auto;
+  padding: 0 0 3% 10%;
+}
+
+/* other */
+
 .scroll2AboutMe a, .scroll2Resume a, .scroll2Projects a{
+  padding: 5px;
   position: relative;
   text-decoration: none;
   background-color: red;
   color: white;
-  display: inline-block;
-  border: 10px solid red;
-  margin-left: 47%;
+  border: 4px solid black;
+  align-self: center;
   /* look into making this somewhat transparent */
 }
 .scroll2AboutMe a:hover, .scroll2Resume a:hover, .scroll2Projects a:hover{
   color: red;
   background-color: white;
   border-color: white;
+  
 }
-.scroll2Resume a{
-  bottom: 30px;
+.scroll2Resume, .scroll2AboutMe, .scroll2Projects {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
-.scroll2AboutMe a{
-  bottom: 15px;
-}
-.scroll2Projects a{
-  margin-top: 20px;
-  bottom: 15px;
-}
+
 .italicBold{
   font-style: italic;
   font-weight: bold;
@@ -211,22 +221,129 @@ main{
   width: 100%;
   margin: auto;
   height: auto;
-  margin-top: 80px;
-  margin-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
-.calculator, .timer, .percussion{
-  width: 400px;
-  height: 500px;
-  margin: 15px;
-}
-.survey{
-  position: relative;
-  margin: 15px;
-  width: 400px;
-  height: 600px
-}
+
 .project-blurb{
   font-size: 26px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+/* For min-width:
+IF the viewport is equal to or bigger than the min-width, apply the styling in the media query
+
+For max-width:
+IF the viewport is lesser than or equal to the max-width, apply the styling in the media query */
+
+
+/* small mobile device */
+@media only screen and (min-width: 50px) and (max-width: 320px){
+
+.projectLink1, .projectLink2, .projectLink3, .projectLink4{
+  display: none;
+}
+.homeLink, .bioLink, .projectsLink{
+  display: block;
+  padding: 0px 15px 0px 15px;
+  color: white;
+  text-decoration: none;
+  float: left;
+}
+}
+
+/* medium mobile device */
+@media only screen and (min-width: 321px) and (max-width: 375.99px){
+
+  .projectLink1, .projectLink2, .projectLink3, .projectLink4{
+    display: none;
+  } 
+  .homeLink, .bioLink, .projectsLink{
+    display: block;
+    padding: 0px 15px 0px 15px;
+    color: white;
+    text-decoration: none;
+    float: left;
+  }
+}
+
+/* large mobile device */
+@media only screen and (min-width: 376px) and (max-width: 425.99px){
+  .homeLink, .bioLink, .projectsLink{
+    display: block;
+    padding: 0px 15px 0px 15px;
+    color: white;
+    text-decoration: none;
+    float: left;
+  }
+  
+  .projectLink1, .projectLink2, .projectLink3, .projectLink4{
+    display: none;
+  }  
+}
+
+/* Tablet */
+@media only screen and (min-width: 426px) and (max-width: 768.99px){
+  
+  .homeLink, .bioLink, .projectsLink{
+    display: block;
+    padding: 0px 15px 0px 15px;
+    color: white;
+    text-decoration: none;
+    float: left;
+  }
+  .projectLink1, .projectLink2, .projectLink3, .projectLink4{
+    display: none;
+  } 
+}
+
+/* Laptop */
+@media only screen and (min-width: 769px) and (max-width: 1024.99px){
+
+  .homeLink, .bioLink, .projectsLink{
+    display: block;
+    padding: 0px 15px 0px 15px;
+    color: white;
+    text-decoration: none;
+    float: left;
+  }
+.projectLink1, .projectLink2, .projectLink3, .projectLink4{
+  display: none;
+} 
+}
+
+/* Large Laptop  working*/
+@media only screen and (min-width: 1025px) and (max-width: 1440.99px){
+
+  .homeLink, .bioLink, .projectsLink{
+    display: block;
+    padding: 0px 15px 0px 15px;
+    color: white;
+    text-decoration: none;
+    float: left;
+  }
+  .projectLink1, .projectLink2, .projectLink3, .projectLink4{
+    display: none;
+  } 
+}
+
+/* 4K  --working */
+@media only screen and (max-width: 2560.99px) and (min-width: 1441px){
+
+  .projectsLink{
+    display: none;
+  }
+  .homeLink, .bioLink{
+    display: block;
+    padding: 0px 15px 0px 15px;
+    color: white;
+    text-decoration: none;
+    float: left;
+  }
+  .projectLink1, .projectLink2, .projectLink3, .projectLink4{
+    display: block;
+  } 
+  
 }

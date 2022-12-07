@@ -20,6 +20,7 @@ class PortfolioPage extends Component {
       <div className='linkContainer'>
       <a className='homeLink' href='#home'>Home</a>
       <a className='bioLink' href='#aboutMe'>About Me</a>
+      <a className='projectsLink' href='#projects'>Projects</a>
       <a className='projectLink4' href= 'https://jeffdg1986.github.io/survey-form/' alt='https://github.com/jeffdg1986/survey-form' target="_blank" rel="noreferrer noopener">Survey Form</a>
       <a className='projectLink3' href= 'https://jeffdg1986.github.io/percussion-machine/' alt='https://github.com/jeffdg1986/percussion-machine' target="_blank" rel="noreferrer noopener">Percussion Machine</a>
       <a className='projectLink2' href= 'https://jeffdg1986.github.io/timer-app/' alt='https://github.com/jeffdg1986/timer-app' target="_blank" rel="noreferrer noopener">Pomodoro Clock</a>
@@ -36,13 +37,10 @@ class PortfolioPage extends Component {
     <div className='technologies'>
       <div style={
         {fontSize: '50px', 
-        textDecorationLine: 'underline'}}>Technologies Available</div>
-      <img src={reactPic} alt='React.js'/>
-      <img  id='jsPic' src={jsPic} alt='JS' />
-      <img src={d3Pic} alt='d3' />
-      <div className='name react'>React.JS</div>
-      <div className='name javascript'>JavaScript</div>
-      <div className='name d3JS'>d3.JS</div>
+        textDecorationLine: 'underline'}}>Technologies</div>
+      <img src={reactPic} alt='React.js'/><div className='name react'>React.JS</div>
+      <img  id='jsPic' src={jsPic} alt='JS'/><div className='name javascript'>JavaScript</div>
+      <img src={d3Pic} alt='d3' /><div className='name d3JS'>d3.JS</div>
       </div>
       <div className='scroll2AboutMe'><a href='#aboutMe'>About Me</a></div>
     </section>
@@ -61,7 +59,7 @@ class PortfolioPage extends Component {
         <li>The only roadblocks to testing / creating are a computer, internet connection, and my own drive for knowledge. Contrast that with the chemical industry and you are looking at millions of dollars for a research facility.</li>
         <li>I have begun to worry about the health risks of working with chemicals.</li>
       </ol>
-      <p>When I'm not working I like to run, lift weights, and take awesome photos like the one above....</p>
+      <p>When I'm not working I like to run, lift weights, and take memorable photos like the one above....</p>
       <p>Contact info: jeffdg1986@gmail.com</p>
       </div>
         <img className='nerd' src={nerd} alt='nerd'></img>
@@ -69,7 +67,7 @@ class PortfolioPage extends Component {
       <div className='scroll2Resume'><a href='#resume'>Resume</a></div>
       </section>
       <section id='resume'>
-        <div className='experienceType'>Work</div>
+        <div className='experienceType first'>Work</div>
         <div className='description'>
         <div className='institution'>BYK USA Inc.</div>
         <div className='jobTitle'>Materials Chemist</div>
