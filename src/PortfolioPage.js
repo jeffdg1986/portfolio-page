@@ -8,6 +8,8 @@ import jsPic from './images/javascript_icon.png';
 import d3Pic from './images/d3_icon.png';
 import calculatorPic from './images/Calculator_3.png';
 import timerPic from './images/Pomodoro_Pic.png';
+import html5 from './images/HTML5_icon.png';
+import cssPic3 from './images/css_icon3.png';
 import React, { Component } from 'react';
 class PortfolioPage extends Component {
   constructor(props) {
@@ -20,6 +22,7 @@ class PortfolioPage extends Component {
       <div className='linkContainer'>
       <a className='homeLink' href='#home'>Home</a>
       <a className='bioLink' href='#aboutMe'>About Me</a>
+      <a className='resLink' href='#resume'>Resume</a>
       <a className='projectsLink' href='#projects'>Projects</a>
       <a className='projectLink4' href= 'https://jeffdg1986.github.io/survey-form/' alt='https://github.com/jeffdg1986/survey-form' target="_blank" rel="noreferrer noopener">Survey Form</a>
       <a className='projectLink3' href= 'https://jeffdg1986.github.io/percussion-machine/' alt='https://github.com/jeffdg1986/percussion-machine' target="_blank" rel="noreferrer noopener">Percussion Machine</a>
@@ -35,13 +38,29 @@ class PortfolioPage extends Component {
       Check out my projects at the top right or more about my background below.</p>
     </div>
     <div className='technologies'>
-      <div style={
-        {fontSize: '50px', 
-        textDecorationLine: 'underline'}}>Technologies</div>
-      <img src={reactPic} alt='React.js'/><div className='name react'>React.JS</div>
-      <img  id='jsPic' src={jsPic} alt='JS'/><div className='name javascript'>JavaScript</div>
-      <img src={d3Pic} alt='d3' /><div className='name d3JS'>d3.JS</div>
-      </div>
+      <div style={{textDecorationLine: 'underline'}}>Technologies</div>
+
+        <div className='react-bundle'>
+        <img src={reactPic} alt='React.js'/><div className='name react'>React.JS</div>
+        </div>
+
+        <div className='js-bundle'>
+        <img  id='jsPic' src={jsPic} alt='JS'/><div className='name javascript'>JavaScript</div>
+        </div>
+
+        <div className='d3-bundle'>
+        <img src={d3Pic} alt='d3' /><div className='name d3JS'>d3.JS</div>
+        </div>
+
+        <div className='html5-bundle'>
+          <img src={html5} alt='HTML' /><div className='name html5'>HTML</div>
+        </div>
+
+        <div className='css-bundle'>
+          <img src={cssPic3} alt='CSS' /><div className='name css'>CSS</div>
+        </div>
+
+    </div>
       <div className='scroll2AboutMe'><a href='#aboutMe'>About Me</a></div>
     </section>
     <section id='aboutMe'>
@@ -67,7 +86,7 @@ class PortfolioPage extends Component {
       <div className='scroll2Resume'><a href='#resume'>Resume</a></div>
       </section>
       <section id='resume'>
-        <div className='experienceType first'>Work</div>
+        <div className='experienceType'>Work</div>
         <div className='description'>
         <div className='institution'>BYK USA Inc.</div>
         <div className='jobTitle'>Materials Chemist</div>
@@ -126,10 +145,10 @@ class PortfolioPage extends Component {
       <section id='projects'>
       <div className='projectContainer'>
         <div className='project-blurb'>Click on the images below to be directed to the application.</div>
-      <a href='https://jeffdg1986.github.io/detailed_calculator/' alt='https://github.com/jeffdg1986/detailed_calculator' target="_blank" rel="noreferrer noopener"><img src={calculatorPic} alt='calculator' className='calculator'/></a>
-      <a href='https://jeffdg1986.github.io/timer-app/' alt='https://github.com/jeffdg1986/timer-app' target="_blank" rel="noreferrer noopener"><img src={timerPic} alt='timer' className='timer'/></a>
-      <a href='https://jeffdg1986.github.io/percussion-machine/' alt='https://github.com/jeffdg1986/percussion-machine' target="_blank" rel="noreferrer noopener"><img src={percussionPic} alt='percussion' className='percussion'/></a>
-      <a href='https://jeffdg1986.github.io/survey-form/' alt='https://github.com/jeffdg1986/survey-form' target="_blank" rel="noreferrer noopener"><img src={surveyPic} alt='survey-form' className='survey'/></a>
+        <a href='https://jeffdg1986.github.io/detailed_calculator/' alt='https://github.com/jeffdg1986/detailed_calculator' target="_blank" rel="noreferrer noopener"><img src={calculatorPic} alt='calculator' className='calculator'/></a>
+        <a href='https://jeffdg1986.github.io/timer-app/' alt='https://github.com/jeffdg1986/timer-app' target="_blank" rel="noreferrer noopener"><img src={timerPic} alt='timer' className='timer'/></a>
+        <a href='https://jeffdg1986.github.io/percussion-machine/' alt='https://github.com/jeffdg1986/percussion-machine' target="_blank" rel="noreferrer noopener"><img src={percussionPic} alt='percussion' className='percussion'/></a>
+        <a href='https://jeffdg1986.github.io/survey-form/' alt='https://github.com/jeffdg1986/survey-form' target="_blank" rel="noreferrer noopener"><img src={surveyPic} alt='survey-form' className='survey'/></a>
       </div>
       </section>
       </main>
