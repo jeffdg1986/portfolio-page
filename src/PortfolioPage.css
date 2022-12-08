@@ -1,5 +1,5 @@
 /* put nerd and beaker pics in the same block, with text in between */
-/* make the quick-links somewhat transparent */
+/* update calculator without paracrine solutions --- maybe */
 
 .navBar{
   display: block;
@@ -175,21 +175,26 @@ main{
   width: 100%;
   margin: auto;
   height: auto;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .project-blurb{
   font-size: 26px;
   text-align: center;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin-bottom: 7%;
+  margin-top: 10%;
 }
 .calculator, .timer, .percussion, .survey{
   align-self: center;
   width: 80%;
   height: auto;
-  padding: 0 0 3% 10%;
+  margin: 0 0 3% 10%;
+
+  
 }
 
+.calculator:hover, .timer:hover, .percussion:hover, .survey:hover{
+ box-shadow: 0 0 20px 10px yellow;
+}
 /* other */
 
 .scroll2AboutMe a, .scroll2Resume a, .scroll2Projects a{
@@ -328,7 +333,8 @@ IF the viewport is lesser than or equal to the max-width, apply the styling in t
   align-self: center;
   width: 40%;
   height: auto;
-  padding: 0 0 3% 7%;
+  margin: 0 0 3% 7%;
+  padding: 0;
 }
 .nerd, .beaker{
   margin-left: 5%;
@@ -359,7 +365,8 @@ IF the viewport is lesser than or equal to the max-width, apply the styling in t
     align-self: center;
     width: 40%;
     height: auto;
-    padding: 0 0 3% 7%;
+    margin: 0 0 3% 7%;
+    padding: 0;
   } 
   .nerd, .beaker{
     margin-left: 5%;
@@ -393,7 +400,8 @@ IF the viewport is lesser than or equal to the max-width, apply the styling in t
     align-self: center;
     width: 16%;
     height: auto;
-    margin: 1%;
+    padding: 0;
+    margin: 0 0 3% 7%;
   }
   .nerd, .beaker{
     margin-left: 5%;
