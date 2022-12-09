@@ -1,5 +1,4 @@
-/* put nerd and beaker pics in the same block, with text in between */
-/* update calculator without paracrine solutions --- maybe */
+
 
 .navBar{
   display: block;
@@ -116,23 +115,19 @@ main{
 #aboutMe h1{
   padding-left: 1%;
 }
-.about{
-  font-size: 20px;
-  width: 90%;
-  height: auto;
-  padding-right: 5%;
-  padding-left: 5%;
-}
 .comparison{
   height: auto;
   width: 90%;
-  margin: 5%;
+  margin: auto;
 
 }
-.nerd, .beaker{
-  position: relative;
+.about, .nerd, .beaker{
+  display: inline-block;
   width: 100%;
-  height:auto;
+  height: auto;
+}
+.about{
+  font-size: 20px;
 }
 
 /* Resume Section */
@@ -181,7 +176,7 @@ main{
   font-size: 26px;
   text-align: center;
   margin-bottom: 7%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .calculator, .timer, .percussion, .survey{
   align-self: center;
@@ -231,12 +226,6 @@ main{
   padding-bottom: 5px;
 }
 
-
-/* For min-width:
-IF the viewport is equal to or bigger than the min-width, apply the styling in the media query
-
-For max-width:
-IF the viewport is lesser than or equal to the max-width, apply the styling in the media query */
 
 
 /* small mobile device */
@@ -336,12 +325,7 @@ IF the viewport is lesser than or equal to the max-width, apply the styling in t
   margin: 0 0 3% 7%;
   padding: 0;
 }
-.nerd, .beaker{
-  margin-left: 5%;
-  position: relative;
-  width: 50%;
-  height: auto;
-}
+
 .technologies{
   width: 50%;
 }
@@ -368,19 +352,14 @@ IF the viewport is lesser than or equal to the max-width, apply the styling in t
     margin: 0 0 3% 7%;
     padding: 0;
   } 
-  .nerd, .beaker{
-    margin-left: 5%;
-    position: relative;
-    width: 50%;
-    height: auto;
-  }
+
   .technologies{
     width: 40%;
   }
 }
 
 /* 4K */
-@media only screen and (max-width: 2560.99px) and (min-width: 1441px){
+@media only screen and (min-width: 1441px){
 
   .projectsLink{
     display: none;
@@ -403,13 +382,37 @@ IF the viewport is lesser than or equal to the max-width, apply the styling in t
     padding: 0;
     margin: 0 0 3% 7%;
   }
-  .nerd, .beaker{
-    margin-left: 5%;
-    position: relative;
-    width: 50%;
-    height: auto;
-  }
+
   .technologies{
     width: 25%;
   } 
+}
+
+@media screen and (min-width: 426px){
+  .beaker{
+    grid-area: beaker;
+    align-self: stretch;
+    max-height: 400px;
+    justify-self: center;
+
+  }
+  .nerd{
+    grid-area: nerd;
+    max-height: 400px;
+    justify-self: center;
+
+  }
+  .about{
+   grid-area: about;
+  }
+.comparison{
+display: grid;
+grid-template-columns: 7fr 25px 5fr;
+grid-template-rows: auto;
+grid-template-areas:
+  'beaker . nerd'
+  'about about about';
+
+}
+
 }
