@@ -1,6 +1,6 @@
 import './PortfolioPage.css';
 import surveyPic from './images/survey_Pic.png'
-import percussionPic from './images/percussion_Pic.png';
+// import percussionPic from './images/percussion_Pic.png';
 import nerd from './images/computer_nerd.jpeg';
 import beaker from './images/beaker_in_lab_3.jpg';
 import reactPic from './images/favicon.ico'; 
@@ -10,6 +10,7 @@ import calculatorPic from './images/Calculator_3.png';
 import timerPic from './images/Pomodoro_Pic.png';
 import html5 from './images/HTML5_icon.png';
 import cssPic3 from './images/css_icon3.png';
+import percussionPicDos from './images/percussion_dos_Pic.png';
 import React, { Component } from 'react';
 class PortfolioPage extends Component {
   constructor(props) {
@@ -147,7 +148,7 @@ class PortfolioPage extends Component {
         <div className='project-blurb'>Click on the images below to be directed to the application.</div>
         <a href='https://jeffdg1986.github.io/detailed_calculator/' alt='https://github.com/jeffdg1986/detailed_calculator' target="_blank" rel="noreferrer noopener"><img src={calculatorPic} alt='calculator' className='calculator'/></a>
         <a href='https://jeffdg1986.github.io/timer-app/' alt='https://github.com/jeffdg1986/timer-app' target="_blank" rel="noreferrer noopener"><img src={timerPic} alt='timer' className='timer'/></a>
-        <a href='https://jeffdg1986.github.io/percussion-machine/' alt='https://github.com/jeffdg1986/percussion-machine' target="_blank" rel="noreferrer noopener"><img src={percussionPic} alt='percussion' className='percussion'/></a>
+        <a href='https://jeffdg1986.github.io/percussion-machine/' alt='https://github.com/jeffdg1986/percussion-machine' target="_blank" rel="noreferrer noopener"><img src={percussionPicDos} alt='percussion' className='percussion'/></a>
         <a href='https://jeffdg1986.github.io/survey-form/' alt='https://github.com/jeffdg1986/survey-form' target="_blank" rel="noreferrer noopener"><img src={surveyPic} alt='survey-form' className='survey'/></a>
       </div>
       </section>
