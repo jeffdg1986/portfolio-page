@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio-page/static/css/main.4dd81c0c.css",
-    "main.js": "/portfolio-page/static/js/main.6e20f881.js",
+    "main.css": "/portfolio-page/static/css/main.4f394f7b.css",
+    "main.js": "/portfolio-page/static/js/main.eefeb97a.js",
     "static/js/787.28a6522c.chunk.js": "/portfolio-page/static/js/787.28a6522c.chunk.js",
     "static/media/pikes_peak.JPG": "/portfolio-page/static/media/pikes_peak.b71ad996486d73bf1f9f.JPG",
+    "static/media/HTML5_icon.png": "/portfolio-page/static/media/HTML5_icon.dbc3baa7e405494219e6.png",
     "static/media/beaker_in_lab_3.jpg": "/portfolio-page/static/media/beaker_in_lab_3.8ff311d2e81f54af037e.jpg",
     "static/media/computer_nerd.jpeg": "/portfolio-page/static/media/computer_nerd.135213dc08f56806c8c2.jpeg",
     "static/media/survey_Pic.png": "/portfolio-page/static/media/survey_Pic.3c8044dacc13e85289bc.png",
     "static/media/Pomodoro_Pic.png": "/portfolio-page/static/media/Pomodoro_Pic.3188319e3081f335054b.png",
-    "static/media/percussion_Pic.png": "/portfolio-page/static/media/percussion_Pic.7f5b95ededaed79f80bb.png",
     "static/media/Calculator_3.png": "/portfolio-page/static/media/Calculator_3.9221866314901e6a8259.png",
+    "static/media/percussion_dos_Pic.png": "/portfolio-page/static/media/percussion_dos_Pic.e3911fc83ecaa38f3f6c.png",
+    "static/media/css_icon3.png": "/portfolio-page/static/media/css_icon3.286a9900f844f7c0ed5f.png",
     "static/media/favicon.ico": "/portfolio-page/static/media/favicon.4fe75d5f9adb18067b85.ico",
     "index.html": "/portfolio-page/index.html",
-    "main.4dd81c0c.css.map": "/portfolio-page/static/css/main.4dd81c0c.css.map",
-    "main.6e20f881.js.map": "/portfolio-page/static/js/main.6e20f881.js.map",
+    "main.4f394f7b.css.map": "/portfolio-page/static/css/main.4f394f7b.css.map",
+    "main.eefeb97a.js.map": "/portfolio-page/static/js/main.eefeb97a.js.map",
     "787.28a6522c.chunk.js.map": "/portfolio-page/static/js/787.28a6522c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4dd81c0c.css",
-    "static/js/main.6e20f881.js"
+    "static/css/main.4f394f7b.css",
+    "static/js/main.eefeb97a.js"
   ]
 }
